@@ -12,8 +12,8 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    flex-direction: column; /* Para asegurar que el contenido se estire */
-    min-height: 100vh; /* Ocupa toda la altura de la pantalla */
+    flex-direction: column; 
+    min-height: 100vh; 
 }
 
 header {
@@ -29,7 +29,7 @@ header {
 
 
 .hero img {
-    width: 100%; /* O el valor que desees */
+    width: 100%; 
     height: auto;
 }
 
@@ -40,19 +40,19 @@ header {
     top: 20%;
     left: 5%;
     display: flex;
-    flex-wrap: wrap; /* Ajuste para que las cajas se adapten al tamaño */
-    gap: 40px; /* Espacio entre las cajas */
+    flex-wrap: wrap; 
+    gap: 40px; 
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente */
+    background-color: rgba(255, 255, 255, 0.8); 
     border-radius: 10px;
-    width: 90%; /* Ajuste de ancho para mejorar la disposición */
+    width: 90%; 
 }
 
 .info, .weather {
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
-    width: 45%; /* Ancho de cada caja para que se ajusten */
+    width: 45%;
 }
 
 .weather {
@@ -66,7 +66,7 @@ header {
 .weather #condition {
     font-weight: bold;
     font-size: 1.2em;
-    color: var( --text-color); /* Aumentar la visibilidad de la condición */
+    color: var( --text-color); 
 }
 
 footer {
@@ -74,22 +74,22 @@ footer {
     padding: 10px;
     background-color: var(--primary-color);
     color: white;
-    margin-top: auto; /* El footer se mantiene abajo */
+    margin-top: auto; 
     width: 100%;
 }
 h2::after {
-    content: " 🌍"; /* Agrega un símbolo después de h2 */
-    font-size: 1.2em; /* Ajusta el tamaño del símbolo */
+    content: " 🌍"; 
+    font-size: 1.2em; 
 }
 
 @media (min-width: 800px) {
     .weather-icon {
-        display: none; /* Ocultar el ícono en pantallas grandes */
+        display: none; 
     }
 
     .weather-image {
-        display: block; /* Mostrar la imagen en pantallas grandes */
-        width: 45px; /* Ajusta el tamaño de la imagen */
+        display: block; 
+        width: 45px; 
         height: auto;
     }
 }
