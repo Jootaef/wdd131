@@ -98,7 +98,7 @@ footer {
     .info, .weather {
         padding: 20px;
         border-radius: 10px;
-        width: 80%; /* Ancho de cada caja para que se ajusten */
+        width: 81%; /* Ancho de cada caja para que se ajusten */
     }
     .hero img {
         width: 100%; /* O el valor que desees */
