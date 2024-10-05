@@ -27,10 +27,13 @@ header {
     position: relative;
 }
 
+
 .hero img {
-    width: 50%; /* Ajuste del tamaño del SVG */
+    width: 100%; /* O el valor que desees */
     height: auto;
 }
+
+
 
 .data-weather {
     position: absolute;
@@ -56,9 +59,11 @@ header {
     background-color: var(--secondary-color);
 }
 
-.weather .icon {
-    font-size: 24px;
+.weather .icon img {
+    width: 35px; /* O el valor que desees */
+    height: auto;
 }
+
 
 .weather #condition {
     font-weight: bold;
@@ -82,15 +87,25 @@ footer {
 
     .data-weather {
         flex-direction: column; /* En pantallas pequeñas, las cajas estarán una debajo de la otra */
-        top: 10%;
-        gap: 20px; /* Menor espacio entre las cajas en pantallas pequeñas */
+        top: 20%;
+        gap: 30px; /* Menor espacio entre las cajas en pantallas pequeñas */
     }
 
     .info, .weather {
-        width: 100%; /* Cada caja ocupará todo el ancho disponible en pantallas pequeñas */
+        width: 80%; /* Cada caja ocupará todo el ancho disponible en pantallas pequeñas */
     }
 
     .hero img {
-        width: 80%; /* Ajuste el SVG en pantallas pequeñas */
+        width: 50%; /* O el valor que desees */
+        height: auto;
+    }
+
+    footer {
+        text-align: center;
+        padding: 10px;
+        background-color: var(--primary-color);
+        color: white;
+        margin-top: auto; /* El footer se mantiene abajo */
+        width: 100%;
     }
 }

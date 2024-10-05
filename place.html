@@ -8,6 +8,9 @@
     <title>WDD 131 - Assignment: Country Page - Jaydan Valencia</title>
     <link rel="stylesheet" href="/styles/styles.css">
     <script src="/scripts/script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -18,8 +21,9 @@
         <picture>
             <source srcset="images/ecuador-large.webp" media="(min-width: 800px)">
             <source srcset="images/ecuador-small.webp" media="(max-width: 799px)">
-            <img src="images/ecuador-large.webp" alt="Ecuador Landscape">
+            <img class="hero-img" src="images/ecuador-large.webp" alt="Ecuador Landscape">
         </picture>
+    </section>
         
         <!-- Data and Weather Overlay -->
         <section class="data-weather">
@@ -38,7 +42,7 @@
             </div>
 
             <div class="weather">
-                <h2>Weather <span class="icon"><img src="images/icon.svg" alt="Weather Icon"></span></h2>
+                <h2>Weather <span class="icon"><img class="weather-icon" src="images/icon.svg" alt="Weather Icon"></span></h2>
                 <p>Temperature: <span id="temperature">10°C</span></p>
                 <p>Conditions: <span id="condition">Partly Cloudy</span></p>
                 <p>Wind: <span id="windSpeed">5 km/h</span></p>
