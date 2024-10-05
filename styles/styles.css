@@ -1,0 +1,96 @@
+:root {
+    --primary-color: #1e8449;
+    --secondary-color: #f4d03f;
+    --text-color: #333;
+    --bg-color: #f2f3f4;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Para asegurar que el contenido se estire */
+    min-height: 100vh; /* Ocupa toda la altura de la pantalla */
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 50%; /* Ajuste del tamaño del SVG */
+    height: auto;
+}
+
+.data-weather {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    display: flex;
+    flex-wrap: wrap; /* Ajuste para que las cajas se adapten al tamaño */
+    gap: 40px; /* Espacio entre las cajas */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente */
+    border-radius: 10px;
+    width: 90%; /* Ajuste de ancho para mejorar la disposición */
+}
+
+.info, .weather {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    width: 45%; /* Ancho de cada caja para que se ajusten */
+}
+
+.weather {
+    background-color: var(--secondary-color);
+}
+
+.weather .icon {
+    font-size: 24px;
+}
+
+.weather #condition {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: var(--primary-color); /* Aumentar la visibilidad de la condición */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: white;
+    margin-top: auto; /* El footer se mantiene abajo */
+    width: 100%;
+}
+
+@media (max-width: 799px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    .data-weather {
+        flex-direction: column; /* En pantallas pequeñas, las cajas estarán una debajo de la otra */
+        top: 10%;
+        gap: 20px; /* Menor espacio entre las cajas en pantallas pequeñas */
+    }
+
+    .info, .weather {
+        width: 100%; /* Cada caja ocupará todo el ancho disponible en pantallas pequeñas */
+    }
+
+    .hero img {
+        width: 80%; /* Ajuste el SVG en pantallas pequeñas */
+    }
+}
