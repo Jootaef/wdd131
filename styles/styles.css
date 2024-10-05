@@ -79,6 +79,10 @@ footer {
     margin-top: auto; /* El footer se mantiene abajo */
     width: 100%;
 }
+h2::after {
+    content: " 🌍"; /* Agrega un símbolo después de h2 */
+    font-size: 1.2em; /* Ajusta el tamaño del símbolo */
+}
 
 @media (max-width: 799px) {
     header h1 {
