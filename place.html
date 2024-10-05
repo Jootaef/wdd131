@@ -17,15 +17,16 @@
         <h1>Madagascar</h1>
     </header>
 
-    <section class="hero">
-        <picture>
-            <source srcset="images/ecuador-large.webp" media="(min-width: 800px)">
-            <source srcset="images/ecuador-small.webp" media="(max-width: 799px)">
-            <img class="hero-img" src="images/ecuador-large.webp" alt="Ecuador Landscape">
-        </picture>
-    </section>
+    <main> 
+        <section class="hero">
+            <picture>
+                <source srcset="images/ecuador-large.webp" media="(min-width: 800px)">
+                <source srcset="images/ecuador-large.webp" media="(max-width: 799px)">
+                <img class="hero-img" src="images/ecuador-large.webp" alt="Ecuador Landscape">
+            </picture>
+        </section>
         
-        <!-- Data and Weather Overlay -->
+
         <section class="data-weather">
             <div class="info">
                 <h2>Data</h2>
@@ -49,11 +50,11 @@
                 <p>Wind chill: <span id="windChill">9.8°C</span></p>
             </div>
         </section>
-    </section>
+    </main> 
 
     <footer>
         <p>&copy; <span id="currentYear"></span> Rubia Magdelena Francesco | Madagascar
-        LastModified: <span id="lastModified"></span></p>
+        Last Modified: <span id="lastModified"></span></p>
     </footer>
 </body>
 </html>

@@ -86,18 +86,26 @@ footer {
     }
 
     .data-weather {
-        flex-direction: column; /* En pantallas pequeñas, las cajas estarán una debajo de la otra */
-        top: 20%;
-        gap: 30px; /* Menor espacio entre las cajas en pantallas pequeñas */
+        display: flex;
+        flex-wrap: wrap; /* Ajuste para que las cajas se adapten al tamaño */
+        gap: 40px; /* Espacio entre las cajas */
+        padding: 20px;
+        border-radius: 10px;
+        width: 90%; /* Ajuste de ancho para mejorar la disposición */
+        margin: 40px auto; /* Añade margen para separar de la hero y centrar el contenido */
     }
 
     .info, .weather {
-        width: 80%; /* Cada caja ocupará todo el ancho disponible en pantallas pequeñas */
+        padding: 20px;
+        border-radius: 10px;
+        width: 80%; /* Ancho de cada caja para que se ajusten */
     }
-
     .hero img {
-        width: 50%; /* O el valor que desees */
+        width: 100%; /* O el valor que desees */
         height: auto;
+    }
+    .weather {
+        background-color: var(--secondary-color);
     }
 
     footer {
