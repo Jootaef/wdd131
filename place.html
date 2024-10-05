@@ -7,7 +7,7 @@
     <meta name="author" content="Jaydan Valencia">
     <title>WDD 131 - Country Page - Jaydan Valencia</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/styles-mobile.css">
+    <link rel="stylesheet" href="/styles/styles-mobile.css" media="(max-width: 799px)">
     <script src="/scripts/script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,7 +22,7 @@
         <section class="hero">
             <picture>
                 <source srcset="images/ecuador-large.webp" media="(min-width: 800px)">
-                <source srcset="images/ecuador-large.webp" media="(max-width: 799px)">
+                <source srcset="images/ecuador-small.webp" media="(max-width: 799px)">
                 <img class="hero-img" src="images/ecuador-large.webp" alt="Ecuador Landscape">
             </picture>
         </section>
@@ -44,7 +44,9 @@
             </div>
 
             <div class="weather">
-                <h2>Weather <span class="icon"><img class="weather-icon" src="images/icon.svg" alt="Weather Icon"></span></h2>
+                <h2>Weather</h2>
+                <img class="weather-icon mobile-only" src="images/icon.svg" alt="Weather Icon (Mobile)">
+                <img class="weather-image desktop-only" src="images/weather-desktop.png" alt="Weather Image (Desktop)">
                 <p>Temperature: <span id="temperature">10°C</span></p>
                 <p>Conditions: <span id="condition">Partly Cloudy</span></p>
                 <p>Wind: <span id="windSpeed">5 km/h</span></p>

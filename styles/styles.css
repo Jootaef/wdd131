@@ -59,16 +59,14 @@ header {
     background-color: var(--secondary-color);
 }
 
-.weather .icon img {
-    width: 35px; /* O el valor que desees */
-    height: auto;
+.weather-icon {
+    display: none;
 }
-
 
 .weather #condition {
     font-weight: bold;
     font-size: 1.2em;
-    color: var(--primary-color); /* Aumentar la visibilidad de la condición */
+    color: var( --text-color); /* Aumentar la visibilidad de la condición */
 }
 
 footer {
@@ -84,40 +82,14 @@ h2::after {
     font-size: 1.2em; /* Ajusta el tamaño del símbolo */
 }
 
-@media (max-width: 799px) {
-    header h1 {
-        font-size: 1.5em;
+@media (min-width: 800px) {
+    .weather-icon {
+        display: none; /* Ocultar el ícono en pantallas grandes */
     }
 
-    .data-weather {
-        display: flex;
-        flex-wrap: wrap; /* Ajuste para que las cajas se adapten al tamaño */
-        gap: 40px; /* Espacio entre las cajas */
-        padding: 20px;
-        border-radius: 10px;
-        width: 90%; /* Ajuste de ancho para mejorar la disposición */
-        margin: 40px auto; /* Añade margen para separar de la hero y centrar el contenido */
-    }
-
-    .info, .weather {
-        padding: 20px;
-        border-radius: 10px;
-        width: 70%; /* Ancho de cada caja para que se ajusten */
-    }
-    .hero img {
-        width: 100%; /* O el valor que desees */
+    .weather-image {
+        display: block; /* Mostrar la imagen en pantallas grandes */
+        width: 45px; /* Ajusta el tamaño de la imagen */
         height: auto;
-    }
-    .weather {
-        background-color: var(--secondary-color);
-    }
-
-    footer {
-        text-align: center;
-        padding: 10px;
-        background-color: var(--primary-color);
-        color: white;
-        margin-top: auto; /* El footer se mantiene abajo */
-        width: 100%;
     }
 }

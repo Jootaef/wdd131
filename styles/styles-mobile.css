@@ -1,0 +1,61 @@
+@media (max-width: 799px) {
+    body {
+        font-size: 14px; /* Ajuste para pantallas pequeñas */
+    }
+
+    .hero {
+        margin-bottom: 20px; /* Espacio debajo de la imagen en móvil */
+        position: relative; /* Reseteamos la posición absoluta */
+    }
+
+    .hero img {
+        width: 100%;
+        height: auto;
+    }
+
+    .data-weather {
+        position: static; /* Esto asegura que ya no esté en absoluto y sobrepuesta */
+        display: flex;
+        flex-direction: column; /* Las cajas se apilan verticalmente */
+        align-items: center;
+        gap: 20px;
+        width: 90%;
+        margin: 20px auto; /* Centramos y añadimos espacio arriba y abajo */
+    }
+
+    .info, .weather {
+        width: 100%; /* Ancho total en pantallas móviles */
+        padding: 10px;
+    }
+
+    .weather {
+        background-color: var(--secondary-color); /* Mantén el color del clima */
+    }
+
+    footer {
+        padding: 20px;
+        margin-top: 40px;
+        position: relative; /* Asegura que se quede en su lugar */
+    }
+
+    body {
+        min-height: 100vh;
+    }
+    .weather .icon img {
+        width: 35px; /* O el valor que desees */
+        height: auto;
+    }
+    main {
+        flex-grow: 1; /* Permite que el contenido crezca para ocupar espacio */
+    }
+    .weather-icon {
+        display: block; /* Mostrar el ícono en pantallas móviles */
+        width: 35px; /* Ajusta el tamaño del ícono */
+        height: auto;
+    }
+    
+    .weather-image {
+        display: none; /* Ocultar la imagen en pantallas móviles */
+    }
+
+}
