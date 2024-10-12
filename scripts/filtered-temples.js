@@ -67,7 +67,7 @@ const temples = [
       location: "Tokyo, Japan",
       dedicated: "1980, October, 27",
       area: 52548,
-      imageUrl: "https://th.bing.com/th/id/OIP.xkJMg0HJO9FrNoV5guPAvwAAAA?rs=1&pid=ImgDetMain"
+      imageUrl: "https://www.gannett-cdn.com/-mm-/8cb7487bc52cbe1154b974845f2b5c2551a55a63/c=0-60-2882-1688/local/-/media/2016/07/06/Phoenix/Phoenix/636034114595792118-Sapporo-Japan-Temple-daytime2016.jpg?width=3200&height=1680&fit=crop"
     },
     {
       templeName: "Paris France",
