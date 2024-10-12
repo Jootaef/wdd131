@@ -1,0 +1,120 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: #f0f0f0;
+    padding: 1em 0;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f0f0f0;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+nav ul li a.active {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    height: 2px;
+    background-color: #4CAF50;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+nav ul li a:hover::after {
+    opacity: 1;
+    transform: scaleX(1);
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px;
+}
+
+.temple-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 15px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.temple-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.temple-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+footer {
+    background-color: #333;
+    color: #f0f0f0;
+    text-align: center;
+    padding: 1em 10;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .temple-card {
+        width: 90%;
+    }
+}
