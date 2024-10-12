@@ -1,0 +1,92 @@
+:root {
+    --primary-color: #1e8449;
+    --secondary-color: #f4d03f;
+    --text-color: #333;
+    --bg-color: #f2f3f4;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; 
+    min-height: 100vh; 
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%; 
+    height: auto;
+}
+
+.data-weather {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 40px; 
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 10px;
+    width: 90%; 
+}
+
+.info, .weather {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    width: 45%;
+}
+
+weather {
+    background-color: var(--secondary-color);
+}
+
+.weather-icon {
+    display: none;
+}
+
+.weather #condition {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: var( --text-color); 
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: white;
+    margin-top: auto; 
+    width: 100%;
+}
+
+h2::after {
+    content: " 🌍"; 
+    font-size: 1.2em; 
+}
+
+@media (min-width: 800px) {
+    .weather-icon {
+        display: none; 
+    }
+
+    .weather-image {
+        display: block; 
+        width: 45px; 
+        height: auto;
+    }
+}
