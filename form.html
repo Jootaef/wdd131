@@ -16,13 +16,11 @@
 <body>
     <h1>Product Review Form</h1>
     <form id="product-review-form" action="review.html" method="get">
-        <!-- Product Name -->
         <label for="product-name">Product Name:</label>
         <select id="product-name" name="product-name" required>
             <option value="" disabled selected>Select a Product...</option>
         </select>
         
-        <!-- Overall Rating -->
         <fieldset>
             <legend>Overall Rating:</legend>
             <label for="rating-1">
@@ -42,34 +40,33 @@
             </label>
         </fieldset>
 
-        <!-- Date of Installation -->
         <label for="installation-date">Date of Installation:</label>
         <input type="date" id="installation-date" name="installation-date" required>
 
-        <!-- Useful Features -->
         <fieldset>
-            <legend>Useful Features:</legend>
-            <label for="feature-1">
-                <input type="checkbox" id="feature-1" name="features" value="Feature 1"> Feature 1
+            <legend>Useful Features</legend>
+            <label for="feature1">
+                <input type="checkbox" id="feature1" name="features" value="Feature 1"> Feature 1
             </label>
-            <label for="feature-2">
-                <input type="checkbox" id="feature-2" name="features" value="Feature 2"> Feature 2
+            <label for="feature2">
+                <input type="checkbox" id="feature2" name="features" value="Feature 2"> Feature 2
             </label>
-            <label for="feature-3">
-                <input type="checkbox" id="feature-3" name="features" value="Feature 3"> Feature 3
+            <label for="feature3">
+                <input type="checkbox" id="feature3" name="features" value="Feature 3"> Feature 3
+            </label>
+            <label for="feature4">
+                <input type="checkbox" id="feature4" name="features" value="Feature 4"> Feature 4
             </label>
         </fieldset>
 
-        <!-- Written Review -->
         <label for="written-review">Written Review:</label>
         <textarea id="written-review" name="written-review" rows="4" cols="50"></textarea>
 
-        <!-- User Name -->
         <label for="user-name">User Name:</label>
         <input type="text" id="user-name" name="user-name">
 
-        <!-- Submit Button -->
-        <input type="submit" value="Submit Review">
+        <input type="submit" value="Submit">
+
     </form>
     <script src="script.js"></script>
 
