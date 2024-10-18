@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 
 });
-// Product array
+
 const products = [
     { id: 1, name: "Product A" },
     { id: 2, name: "Product B" },
@@ -13,7 +13,7 @@ const products = [
     { id: 4, name: "Product D" }
 ];
 
-// Populate the Product Name select field
+
 const productSelect = document.getElementById("product-name");
 products.forEach(product => {
     const option = document.createElement("option");
@@ -22,7 +22,6 @@ products.forEach(product => {
     productSelect.appendChild(option);
 });
 
-// Review counter using localStorage
 document.getElementById("product-review-form").addEventListener("submit", () => {
     let reviewCount = localStorage.getItem("reviewCount") || 0;
     reviewCount++;
